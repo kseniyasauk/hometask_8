@@ -1,0 +1,6 @@
+c:\users\pc\documents\visual studio 2015\Projects\Task8_Serialization\Serialization\bin\Debug\Serialization.exe.config
+c:\users\pc\documents\visual studio 2015\Projects\Task8_Serialization\Serialization\bin\Debug\Serialization.exe
+c:\users\pc\documents\visual studio 2015\Projects\Task8_Serialization\Serialization\bin\Debug\Serialization.pdb
+c:\users\pc\documents\visual studio 2015\Projects\Task8_Serialization\Serialization\obj\Debug\Serialization.csprojResolveAssemblyReference.cache
+c:\users\pc\documents\visual studio 2015\Projects\Task8_Serialization\Serialization\obj\Debug\Serialization.exe
+c:\users\pc\documents\visual studio 2015\Projects\Task8_Serialization\Serialization\obj\Debug\Serialization.pdb
