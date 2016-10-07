@@ -12,8 +12,16 @@ namespace Serialization
     {
         static void Main(string[] args)
         {
-            const string fileName = @"D:\file.txt"; 
+            const string fileName = @"D:\file.xml"; 
             Catalog c = new Catalog();
+            ReadingFromXmlFile file = new ReadingFromXmlFile();
+            var collection = file.GetBooks();
+            foreach (var book in collection)
+            {
+                c.Books.Add(new Book(book));
+                
+            }
+            
 
             var serializer = new XmlSerializer(typeof(Catalog));
             var stream = new FileStream(fileName, FileMode.Create);
