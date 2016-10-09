@@ -11,15 +11,16 @@ using System.Xml.Serialization;
 
 namespace Serialization
 {
-    
-
+    [Serializable]
     [XmlType (TypeName = "catalog")]
     public class Catalog
     {
         [XmlArray]
-        public List<Book> Books { get; set; }
+        public List<Book> Books { get; set; } = new List<Book>();
+        
     }
 
+    [Serializable]
     [XmlType (TypeName = "book")]
     public class Book
     {
@@ -50,31 +51,17 @@ namespace Serialization
         [XmlElement("registration_date")]
         public DateTime RegistrationDate { get; set; }
 
-        public Book(string id, string isbn, string author, string title, Genre gen, string publisher,
-            DateTime publishDate, string description, DateTime registrationDate)
-        {
-            this.Id = id;
-            this.Isbn = isbn;
-            this.Author = author;
-            this.Title = title;
-            this.Gen = gen;
-            this.Publisher = publisher;
-            this.PublishDate = publishDate;
-            this.Description = description;
-            this.RegistrationDate = registrationDate;
-        }
-
         public Book(KeyValuePair<string,List<string>> book)
         {
             this.Id = book.Key;
 
-            if(!book.Value.First().Equals("")) { this.Isbn = book.Value.First();}
+            //if(!book.Value.First().Equals("")) { this.Isbn = book.Value.First();}
 
-            this.Author = book.Value[1];
+            this.Author = book.Value[0];
 
-            this.Title = book.Value[2];
+            this.Title = book.Value[1];
 
-            string gen = book.Value[3];
+            string gen = book.Value[2];
             switch (gen)
             {
                 case "Computer":
@@ -97,15 +84,15 @@ namespace Serialization
 
             }
                 
-            this.Publisher = book.Value[4];
+            this.Publisher = book.Value[3];
 
-            string publishDate = book.Value[5];
+            string publishDate = book.Value[4];
             IFormatProvider culture = CultureInfo.CurrentCulture.DateTimeFormat;
             this.PublishDate = DateTime.ParseExact(publishDate, "yyyy-MM-dd", culture);
 
-            this.Description = book.Value[6];
+            this.Description = book.Value[5];
 
-            string registrationDate = book.Value[7];
+            string registrationDate = book.Value[6];
             this.RegistrationDate = DateTime.ParseExact(registrationDate, "yyyy-MM-dd", culture);
             
         }

@@ -11,7 +11,8 @@ namespace Serialization
     {
         public Dictionary<string, List<string>> GetBooks()
         {
-            XDocument xd = XDocument.Load(@"D:\ht8\hometask_8\Serialization\Books.xml");
+            //XDocument xd = XDocument.Load(@"D:\ht8\hometask_8\Serialization\Books.xml");
+            XDocument xd = XDocument.Load(@"..\..\Books.xml");
 
             Dictionary<string, List<string>> dictionary = new Dictionary<string, List<string>>();
             
@@ -30,8 +31,8 @@ namespace Serialization
                 {
                     if (attr.Name.LocalName == "isbn")
                     {
-                        break;
-                        //continue;
+                        //break;
+                        continue;
                     }
                     //attList.Add(flag ? attr.Value : "");
                     attList.Add(attr.Value);

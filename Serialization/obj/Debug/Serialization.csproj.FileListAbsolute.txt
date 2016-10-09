@@ -10,3 +10,9 @@ D:\ht8\hometask_8\Serialization\obj\Debug\Serialization.pdb
 D:\ht8\hometask_8\Serialization\bin\Debug\Serialization.exe
 D:\ht8\hometask_8\Serialization\bin\Debug\Serialization.pdb
 D:\ht8\hometask_8\Serialization\obj\Debug\Serialization.csprojResolveAssemblyReference.cache
+C:\Users\PC\Documents\VisualStudio2015\Projects\Task8_Serialization\hometask_8\Serialization\bin\Debug\Serialization.exe.config
+C:\Users\PC\Documents\VisualStudio2015\Projects\Task8_Serialization\hometask_8\Serialization\obj\Debug\Serialization.exe
+C:\Users\PC\Documents\VisualStudio2015\Projects\Task8_Serialization\hometask_8\Serialization\obj\Debug\Serialization.pdb
+C:\Users\PC\Documents\VisualStudio2015\Projects\Task8_Serialization\hometask_8\Serialization\bin\Debug\Serialization.exe
+C:\Users\PC\Documents\VisualStudio2015\Projects\Task8_Serialization\hometask_8\Serialization\bin\Debug\Serialization.pdb
+C:\Users\PC\Documents\VisualStudio2015\Projects\Task8_Serialization\hometask_8\Serialization\obj\Debug\Serialization.csprojResolveAssemblyReference.cache
